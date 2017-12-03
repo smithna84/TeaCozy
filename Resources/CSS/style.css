@@ -1,3 +1,5 @@
+/* Page */
+
 body{
   font-family: Helvetica;
   font-size: 22px;
@@ -6,6 +8,20 @@ body{
   background-color: black;
   opacity: 0.9;
 }
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+h2, h3, h4{
+  margin: 0;
+  padding: 10px;
+}
+
+/* Header */
 
 header{
   display: flex;
@@ -24,8 +40,9 @@ header{
   align-items: center;
 }
 
-header span{
-  align-items: flex-end;
+nav span{
+  display: inline-block;
+  padding: 20px 10px;
   text-decoration: underline;
 }
 
@@ -35,7 +52,10 @@ nav a{
 
 nav{
   text-align: right;
+  flex-grow: 1;
 }
+
+/* Main Content */
 
 .content{
   padding-top: 69px;
@@ -44,20 +64,33 @@ nav{
   margin: auto;
 }
 
+div{
+  display: block;
+}
+
+/* Mission */
+
 #mission{
   height: 700px;
-  width: 1200px;
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  background-image: url(../Images/img-mission-background.jpg);
   padding-top: 70px;
 
 }
 
-.flex-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+#mission .flex-container{
+  margin: auto;
+  background-color: black;
+  width: 100%;
 }
+
+h2, h4 {
+  margin: 0px;
+  padding: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+/* Tea */
 
 #tea{
   height: 700px;
@@ -66,41 +99,56 @@ nav{
   padding-top: 70px;
 }
 
-.items{
+.items img{
   height: 200px;
   width: 300px;
-  padding: 5px;
-  flex-wrap: wrap;
+  margin: 10px;
+  display: block;
 }
+
+#tea span{
+  margin-top: 10px;
+}
+
+/* Locations */
 
 #locations{
   height: 500px;
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  width: 100%;
+  padding-top: 50px;
+  background-image: url(../Images/img-locations-background.jpg);
 }
 
-.flex-container.locations{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+h3 {
+  margin: 0px;
+  padding: 10px;
+  display: block;
+  font-weight: bold;
 }
 
 .location{
-  align-items: center;
+  background-color: black;
   width: 300px;
-  padding: 15px 20px;
-  opacity: 1;
-  border: 1px solid blue;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px 20px;
+  opacity: 1.0;
 }
+
+/* Contact */
 
 .contact{
   height: 200px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
 }
+
+/* Footer */
 
 .footer{
   text-align: left;
-}
-
-h2, h3, h4{
-  margin: 0;
-  padding: 10px;
+  padding-left: 20px;
 }
