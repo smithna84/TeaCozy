@@ -30,8 +30,9 @@ header{
   flex-direction: row;
   width: 100%;
   height: 69px;
+  background-color: black;
   border-bottom: 1px solid seashell;
-  z-index: auto;
+  z-index: 1;
 }
 
 .logo{
@@ -72,6 +73,7 @@ div{
 /* Mission */
 
 #mission{
+  display: flex;
   height: 700px;
   background-image: url(../Images/img-mission-background.jpg);
   padding-top: 70px;
