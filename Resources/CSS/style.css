@@ -29,6 +29,14 @@ header span{
   text-decoration: underline;
 }
 
+nav a{
+  color: inherit;
+}
+
+nav{
+  text-align: right;
+}
+
 .content{
   padding-top: 69px;
   opacity: 0.9;
